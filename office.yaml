@@ -1,0 +1,23 @@
+esphome:
+  name: office
+  platform: ESP8266
+  board: nodemcuv2
+
+wifi:
+  ssid: 'iot'
+  password: 'kuwve99TUR'
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  password: 'G@stray1981'
+
+ota:
+  password: 'G@stray1981'
+
+switch:
+  - platform: gpio
+    name: "Living Room Dehumidifier"
+    pin: 5
